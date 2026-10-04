@@ -2,6 +2,8 @@
 
 /** Generic paginated API response wrapper */
 export interface Page<T> {
+  first: boolean;
+  last: boolean;
   content: T[];
   totalElements: number;
   totalPages: number;
